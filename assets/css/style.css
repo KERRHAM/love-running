@@ -42,6 +42,7 @@ main {
     background-color: aqua;
     /* make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 #menu > li {
     margin-bottom: 1em;
@@ -49,7 +50,7 @@ main {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
-/* navbar styles with drop down menu*/
+/* navbar styles with drop down toggle*/
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -60,6 +61,7 @@ nav {
     display: none;
     top: 100%;
 }
+/* nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
