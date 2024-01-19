@@ -103,24 +103,6 @@ nav {
     list-style-type: none;
 }
 
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-    
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
 /* Reasons to run section styles */
 #reasons {
     width: 90%;
@@ -171,6 +153,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -183,9 +166,40 @@ nav {
     /* Creates a grid of meetup time divs over the background image */
     border: 2px solid white;
 }
+
 #times h3 {
     /* override the heading color set in the general styles  */
     color: #fafafa;
+}
+
+/* Gallery Page */
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
+
+/* footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+    
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 /* media query: tablets and larger (768px and up)*/
