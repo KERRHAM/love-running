@@ -20,65 +20,58 @@
 </head>
 
 <body>
-
-    <!--header-->
+    <!-- Header -->
     <header>
         <a href="index.html">
             <h1 id="logo">Love Running</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
             <ul id="menu">
-                <li> <a href="index.html" class="active">Home</a> </li>
-                <li> <a href="gallery.html" class="active" target="_blank">Gallery</a> </li>
-                <li> <a href="signup.html" class="active" target="_blank">Sign Up</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--main content-->
+    <!-- Main content -->
     <main>
-     <section id="signup">
-        <form action="https://formdump.codeinstitute.net" method="post" id="signup-form">
-            <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you signed up!</h2>
-            <!-- First Name -->
-            <label for="first_name">First Name</label>
-            <input type="text" name="fname" id="fname" class="text-input">
-            <br
-            <label for="last_name">Last Name</label>
-            <input type="text" name="lname" id="lname" class="text-input">
-            <br>
-            <!-- Email -->
-            <label for="email_address">Email Address</label>
-            <input type="Email" name="Email" id="Email" class="text-input">
-
-            <!-- Radio buttons -->
-            <div id="radio-buttons">
-                <div>
-                    <label for="running_preference">Road</label>
-                    <input type="radio" name="running_preference" id="running_preference" value="Road">
+        <section id="signup">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up!</h2>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" class="text-input" required>
+                <br>
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" class="text-input" required>
+                <br>
+                <label for="email_address">Email Address</label>
+                <input type="email" name="email_address" id="email_address" class="text-input" required>
+                <br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" name="running_preference" id="trail" value="trail" required>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="running_preference">Trail</label>
-                    <input type="radio" name="running_preference" id="running_preference" value="Trail">
-                </div>
-                <div>
-                    <label for="running_preference">both</label>
-                    <input type="radio" name="running_preference" id="running_preference" value="Both">
-                </div>
-
-             <!-- submit button -->
-             <input type="submit" value="Lets Run!" class="join-button">
-            </div>
-
-
-
-        </form>
-     </section>
+                <button type="submit" class="join-button">Let's Run!</button>
+            </form>
+        </section>
     </main>
 
-    <!--footer-->
+    <!-- Footer -->
     <footer>
         <ul id="social-networks">
             <li>
@@ -104,8 +97,8 @@
         </ul>
     </footer>
 
-    <!-- Font Awesome Link -->
-    <script src="https://kit.fontawesome.com/6d4748c69b.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
